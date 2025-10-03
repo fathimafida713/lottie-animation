@@ -26,19 +26,32 @@ class Chats extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          TextField(style: TextStyle(color: Colors.white),
+          TextField(
+            style: TextStyle(color: Colors.white),
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.search, color:const Color.fromARGB(255, 158, 161, 163)),
+              prefixIcon: Icon(
+                Icons.search,
+                color: const Color.fromARGB(255, 158, 161, 163),
+              ),
               hintText: "Ask Meta AI or Search",
-              hintStyle: TextStyle(color:const Color.fromARGB(255, 158, 161, 163)),
-              
+              hintStyle: TextStyle(
+                color: const Color.fromARGB(255, 158, 161, 163),
+              ),
+
               fillColor: const Color.fromARGB(255, 58, 58, 58),
               filled: true,
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(40),borderSide: BorderSide.none)
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(100),
+                borderSide: BorderSide.none,
+              ),
             ),
           ),
-
         ],
+      ),floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.black,
+        child: Icon(Icons.message_outlined),
       ),
     );
   }

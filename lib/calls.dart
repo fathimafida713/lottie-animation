@@ -15,6 +15,10 @@ class Calls extends StatelessWidget {
           SizedBox(width: 20),
           Icon(Icons.more_vert),
         ],
+      ), floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.black,child: Icon(Icons.add_call),
       ),);
   }
 }

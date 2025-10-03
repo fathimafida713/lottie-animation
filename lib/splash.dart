@@ -7,7 +7,7 @@ class Splash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 4), () {
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Homee()));
     });
     return Scaffold(body: Center(child: Lottie.asset("assets/a.json")));

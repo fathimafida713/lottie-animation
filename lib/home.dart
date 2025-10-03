@@ -19,12 +19,7 @@ class _HomeeState extends State<Homee> {
     return Scaffold(
       backgroundColor: Colors.black,
      
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.green,
-        foregroundColor: Colors.black,
-        child: Icon(Icons.message),
-      ),
+      
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.greenAccent,
         unselectedItemColor: Colors.white,
