@@ -1,3 +1,4 @@
+import 'package:animation/home.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -6,6 +7,9 @@ class Splash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Lottie.asset("assets/a.json"),),);
+    Future.delayed(Duration(seconds: 4), () {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Homee()));
+    });
+    return Scaffold(body: Center(child: Lottie.asset("assets/a.json")));
   }
 }
