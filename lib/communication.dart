@@ -14,7 +14,12 @@ class Communication extends StatelessWidget {
         title: Text("Communication"),
         actions: [Icon(Icons.more_vert)],
       ),
-     
+      body:  Icon(
+          Icons.people_outline_outlined,
+          color: Colors.greenAccent,
+          size: 150,
+        ),
+      
     );
   }
 }

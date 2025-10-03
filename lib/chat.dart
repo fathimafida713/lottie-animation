@@ -39,7 +39,7 @@ class Chats extends StatelessWidget {
                 hintStyle: TextStyle(
                   color: const Color.fromARGB(255, 158, 161, 163),
                 ),
-            
+
                 fillColor: const Color.fromARGB(255, 58, 58, 58),
                 filled: true,
                 border: OutlineInputBorder(
@@ -95,7 +95,7 @@ class Chats extends StatelessWidget {
                       ),
                     ),
                   ),
-            
+
                   SizedBox(width: 10),
                   Container(
                     height: 30,
@@ -140,18 +140,42 @@ class Chats extends StatelessWidget {
               ),
             ),
           ),
-        ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/mountain.webp"),radius: 30,
-              ),
-              title: Text("mountain", style: TextStyle(color: Colors.white)),
-              subtitle: Text(
-                "Where are you",
-                style: TextStyle(color: Color.fromARGB(255, 158, 161, 163)),
-              ),
-              trailing: Text("11:00pm",style: TextStyle(color: Color.fromARGB(255, 158, 161, 163) ),),
+          ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage("assets/mountain.webp"),
+              radius: 30,
             ),
-          
+            title: Text("mountain", style: TextStyle(color: Colors.white)),
+            subtitle: Text(
+              "Where are you",
+              style: TextStyle(color: Color.fromARGB(255, 158, 161, 163)),
+            ),
+            trailing: Text(
+              "11:00pm",
+              style: TextStyle(color: Color.fromARGB(255, 158, 161, 163)),
+            ),
+          ),
+          ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage("assets/tree.jpg"),
+              radius: 30,
+            ),
+            title: Text("Tree", style: TextStyle(color: Colors.white)),
+            subtitle: Text(
+              "Happy birthday to you",
+              style: TextStyle(color: Color.fromARGB(255, 158, 161, 163)),
+            ),trailing: Text("10.29pm",style: TextStyle(color: Color.fromARGB(255, 158, 161, 163)),),
+          ), ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage("assets/tiger.jpg"),
+              radius: 30,
+            ),
+            title: Text("Tiger", style: TextStyle(color: Colors.white)),
+            subtitle: Text(
+              "I  am hungry nowww..",
+              style: TextStyle(color: Color.fromARGB(255, 158, 161, 163)),
+            ),trailing: Text("10.29pm",style: TextStyle(color: Color.fromARGB(255, 158, 161, 163)),),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
